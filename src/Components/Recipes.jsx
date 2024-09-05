@@ -17,7 +17,7 @@ const Recipes = ({ searchQuery, sortOption }) => {
             } else if (sortBy === 'rating') {
                 comparison = a.rating - b.rating;
             } else if (sortBy === 'difficulty') {
-                comparison = a.difficulty - b.difficulty;
+                comparison = a.difficulty.localeCompare(b.difficulty); 
             }
             return order === 'asc' ? comparison : -comparison;
         });
@@ -32,7 +32,7 @@ const Recipes = ({ searchQuery, sortOption }) => {
                 setRecipes(sortedRecipes);
             } catch (error) {
                 console.error('Error fetching recipes:', error);
-                setRecipes([]);
+                setRecipes([]); 
             } finally {
                 setIsLoading(false);
             }
