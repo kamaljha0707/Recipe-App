@@ -21,7 +21,7 @@ const Modal = ({ recipeId, closeModal }) => {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
-        <div className="bg-white overflow-y-auto max-h-[90vh] w-full max-w-3xl p-6 rounded-md shadow-lg relative">
+        <div className="bg-white overflow-y-auto max-h-[95vh] w-full max-w-3xl p-6 rounded-md shadow-lg relative">
             <button onClick={closeModal} className="absolute top-2 right-4 text-black text-4xl hover:text-gray-600">
                 &times;
             </button>
@@ -29,7 +29,7 @@ const Modal = ({ recipeId, closeModal }) => {
             <img src={recipe.image} alt={recipe.title} className="w-full h-64 object-cover rounded-md mb-4" />
             <div className="flex w-full justify-between">
                 <p className="font-semibold text-gray-700">Ingredients :</p>
-                <p>🕒 {recipe.cookTimeMinutes} minutes</p>
+                <p>🕒 {recipe.prepTimeMinutes} minutes</p>
             </div>
             <ul className="bg-[#fefae0] my-4 rounded-md text-center py-4 px-8 flex justify-start items-center flex-wrap gap-2">
                 {recipe?.ingredients.map((ingredient, index) => (
