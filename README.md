@@ -6,7 +6,7 @@
 - Sorting
 - Recipe Details
 
-This Project Contains 3 Main File in src folder which is:
+This Project Contains 4 Main File in src > Components folder which is:
 - App.jsx
 - Recipe.jsx
 - Card.jsx
@@ -14,5 +14,5 @@ This Project Contains 3 Main File in src folder which is:
 
 You Can Directly Jump to these files for deeper understanding of this project 
 
-For this project, I used the Recipe API : [DummyJSON
+For this project, I used the Recipe API : [DummyJSON Recipe API
 ](https://dummyjson.com/docs/recipes).
